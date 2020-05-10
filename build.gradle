@@ -83,7 +83,7 @@ bootJar  {
                 "Gradle-Version": gradle.gradleVersion,
                 "Java-Version": System.getProperty('java.version'))
     }
-    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    //from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 }
 
 dependencies {
