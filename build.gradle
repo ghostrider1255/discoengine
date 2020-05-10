@@ -120,7 +120,7 @@ dependencyManagement {
 
 
 docker {
-    name 'localhost:5000/${project.name}:${project.version}'
+    name "localhost:5000/${project.name}:${project.version}"
     files tasks.bootJar.outputs
     //tag 'localhost:5000/${project.name}:${project.version}'
     dockerfile file('Dockerfile')
