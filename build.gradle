@@ -121,9 +121,9 @@ dependencyManagement {
 docker {
     name 'localhost:5000/${project.name}:${project.version}'
     files tasks.bootJar.outputs
-    tag 'localhost:5000/${project.name}:${project.version}'
+    //tag 'localhost:5000/${project.name}:${project.version}'
     dockerfile file('Dockerfile')
-    buildArgs([HOST_APP_JAR_LOC: 'version'])
+    //buildArgs([HOST_APP_JAR_LOC: 'version'])
 }
 
 
