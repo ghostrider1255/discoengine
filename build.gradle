@@ -45,6 +45,7 @@ repositories {
             username = "admin" // Artifactory user name
             password = "password" // Password or API Key
         }
+        allowInsecureProtocol = true
     }
 
 }
