@@ -41,13 +41,12 @@ repositories {
     mavenCentral()
     maven {
         url "${artifactory}${artifactoryRepo3pp}"
+        allowInsecureProtocol = true
         credentials {               // Optional resolver credentials (leave out to use anonymous resolution)
             username = "admin" // Artifactory user name
             password = "password" // Password or API Key
         }
-        allowInsecureProtocol = true
     }
-
 }
 
 artifactory {
