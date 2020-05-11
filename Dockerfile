@@ -13,8 +13,8 @@ RUN mkdir -p $APP_HOME_DIR \
 
 VOLUME $APP_CONFIG_DIR
 
-COPY $HOST_APP_JAR_LOC $APP_HOME_DIR/
+COPY *.jar $APP_HOME_DIR/
 RUN mv ${APP_HOME_DIR}/*.jar ${APP_HOME_DIR}/application.jar
 RUN chmod 755 ${APP_HOME_DIR}/application.jar
 
-ENTRYPOINT ["java","-jar","/opt/app/application.jar","--spring.config.location=file:${APP_CONFIG_DIR}/application.properties"]
+#ENTRYPOINT ["java","-jar","/opt/app/application.jar","--spring.config.location=file:${APP_CONFIG_DIR}/application.properties"]
