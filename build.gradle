@@ -93,7 +93,7 @@ docker {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web',
             'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:2.2.2.RELEASE',
-            'org.springframework.cloud:spring-cloud-starter-netflix-zuul:2.2.2.RELEASE'
+            'org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:2.2.2.RELEASE'
 }
 
 task versionIncr {
