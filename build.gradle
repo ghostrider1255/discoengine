@@ -28,7 +28,7 @@ version project.properties.containsKey("releaseVersion") ? "${artifactMajorVersi
 sourceCompatibility = 1.8
 
 ext {
-    springCloudVersion ='Greenwich.RELEASE'
+    springCloudVersion ='Hoxton.SR1'
     artifactName ='<artifact>'
     artifactory = 'http://localhost:8081/artifactory/'
     artifactoryRepo = 'gradle-lib-release'
