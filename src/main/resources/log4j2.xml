@@ -6,7 +6,7 @@
         </Console>
         <File name="LogToFile" fileName="H:\\Projects\\app.log">
             <PatternLayout>
-                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+                <Pattern>%d{DATE} [%t] [%level] %p %c{10} %m%n</Pattern>
             </PatternLayout>
         </File>
     </Appenders>
